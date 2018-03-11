@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
-const Home = () => (
-    <h1>Witamy w aplikacji państwa.js</h1>
-);
+const Home = () => <h1>Witamy w aplikacji państwa.js</h1>;
 
 export default Home;
