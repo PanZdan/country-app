@@ -6,10 +6,15 @@ import store from "./store/index";
 import routes from "./routes";
 import "./country.css";
 import { getCountries } from "./actions/actions-countries";
+import DevTools from "./DevTools";
+
 
 render(
   <Provider store={store}>
-    <Router history={hashHistory} routes={routes} />
+    <div>
+      <Router history={hashHistory} routes={routes} />
+      <DevTools/>
+    </div>
   </Provider>,
   document.getElementById("root")
 );
